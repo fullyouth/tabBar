@@ -1,10 +1,10 @@
 # tabBar
 轮播切换
 
-##效果图
+## 效果图
 ![alt](./img/show.jpg)
 
-##配置
+## 配置
 ```
     new TabBar({
         tabEle:'.js-tab',//tab包裹层,默认.js-tab
