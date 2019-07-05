@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>tabBar</title>
+    <!-- 默认样式重置 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- 页面优化样式 -->
+    <link rel="stylesheet" href="./css/extra.css">
+    <!-- tabBar样式 -->
+    <link rel="stylesheet" href="./css/tabBar.css">
+</head>
+
+<body class="p50">
+    <div class="tab js-tab">
+        <ul class="tab_nav">
+            <li class="current"><a href="javascript:;">1</a></li>
+            <li><a href="javascript:;">2</a></li>
+            <li><a href="javascript:;">3</a></li>
+            <li><a href="javascript:;">4</a></li>
+        </ul>
+        <div class="tab_content_wraper">
+            <ul class="tab_content">
+                <li class="current">
+                    <img src="./img/avenger1.jpeg" alt="">
+                </li>
+                <li>
+                    <img src="./img/avenger2.jpeg" alt="">
+                </li>
+                <li>
+                    <img src="./img/avenger3.jpeg" alt="">
+                </li>
+                <li>
+                    <img src="./img/avenger4.jpeg" alt="">
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+<script src="./js/jquery.js"></script>
+<script src="./js/tabBar.js"></script>
+<script>
+    $(function () {
+        var a = TabBar({
+            triggerType: 'mouseover',
+            invoke: 0,
+            auto: 2000
+        });
+    });
+</script>
+
+</html>
